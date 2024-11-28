@@ -1,0 +1,32 @@
+.product_s3.home_s1 {
+    background: white !important;
+}
+
+.product_s3 .home_s1_title {
+    align-items: flex-start;
+}
+
+.product_s3 .home_s1_item h3 {
+    font-size: 20px;
+}
+
+.product_s3 .home_s1_element-blob_line {
+    top: 16px;
+
+    transform: rotateZ(25deg);
+}
+
+@media screen and (max-width: 800px) {
+    .home_s1_title h2 {
+        font-size: 25px;
+    }
+
+    .about_s3 .home_s1_title, .product_s3 .home_s1_title {
+        align-items: center
+    }
+    .product_s3 .home_s1_element-blob_line{
+        left: -23px;
+        top: 48px;
+        transform: rotateZ(30deg);
+    }
+}
