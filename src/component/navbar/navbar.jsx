@@ -31,16 +31,16 @@ export default function Navbar({setIsModalOpen}) {
                 <div className="row">
                     <div className="col-lg-12">
                         <a className="logo" href="#">
-                            <img src={logo} alt=""/> <p>Toviq</p>
+                            <img src={logo} alt=""/> <p></p>
                         </a>
 
                         {/* Menu */}
                         <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
                             <ul>
                                 <li className={location.pathname === "/" ? "active_location" : ""}><a href="/">Главная</a></li>
-                                <li className={location.pathname === "/about" ? "active_location" : ""}><a href="/about">о нас</a></li>
-                                <li className={location.pathname === "/product" ? "active_location" : ""}><a href="/product">Product</a></li>
-                                <li className={location.pathname === "/contact" ? "active_location" : ""}><a href="/contact">Contact</a></li>
+                                <li className={location.pathname === "/about" ? "active_location" : ""}><a href="/about">О нас</a></li>
+                                <li className={location.pathname === "/product" ? "active_location" : ""}><a href="/product">Продукция</a></li>
+                                <li className={location.pathname === "/contact" ? "active_location" : ""}><a href="/contact">Контакты</a></li>
                             </ul>
                         </div>
 

@@ -15,10 +15,10 @@ function Contact(props) {
                 </div>
                 <div className="contact_opacity"></div>
                 <div className="contact_header_left">
-                    <h1>Contact Us</h1>
+                    <h1>Контакты</h1>
                 </div>
                 <div className="contact_header_right">
-                    Home | Contact Us
+                    Главная | Контакты
                 </div>
                 <div className="header_shape_bottom">
                     <img src={shape} alt=""/>
@@ -34,9 +34,10 @@ function Contact(props) {
                                     <PermPhoneMsgIcon/>
                                 </div>
                                 <div className="contact_box_item_text">
-                                    <h4>Phone</h4>
-                                    <a href="#">+998 99 123 32 21</a>
-                                    <a href="#">+998 99 123 32 21</a>
+                                    <h4>Тлефон</h4>
+                                    <a href="tel:+998951204111">+998 95 120 41 11</a>
+                                    <a href="tel:+998972570384">+998 97 257 03 84</a>
+                                    <a href="tel:+998996330053">+998 99 633 00 53</a>
                                 </div>
 
                             </div>
@@ -45,9 +46,10 @@ function Contact(props) {
                                     <PlaceIcon/>
                                 </div>
                                 <div className="contact_box_item_text">
-                                    <h4>Address</h4>
-                                    <a href="#">Республика Узбекистан , Ташкентская область, г. Ахангаран, участок
-                                        В6</a>
+                                    <h4>Адрес</h4>
+                                    <a href="#">Республика Узбекистан , Наманганская область
+                                        Попский район,
+                                        Уйгурсой МФЙ, участок №19</a>
                                 </div>
                             </div>
                             <div className="contact_box_item">
@@ -76,15 +78,15 @@ function Contact(props) {
                         <div className="col-lg-5">
                             <div className="contact_right">
                                 <div className="contact_right_title">
-                                    <span>Send us a message</span>
-                                    <h2>Help us with your feedback; it is of great value, so we can serve you better and
-                                        better</h2>
+                                    <span>Контакты</span>
+                                    <h2>Мы всегда рады вас слышать и отвечать на ваши вопросы! Свяжитесь с нами любым
+                                        удобным для вас способом:</h2>
                                 </div>
                                 <form action="#">
-                                    <input type="text"/>
-                                    <input type="text"/>
+                                    <input type="text" placeholder={"Имя"}/>
+                                    <input type="text" placeholder={"Тлефон номер"}/>
                                     <textarea rows="5" placeholder="Сообщение"/>
-                                    <button>Send Message</button>
+                                    <button>Отправить </button>
                                 </form>
                             </div>
                         </div>

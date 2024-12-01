@@ -136,9 +136,9 @@
     height: 100%;
     aspect-ratio: 1/1;
     padding: 1rem;
-    background-image: url("../../assets/home/home_s1_1.png");
+    background-image: url("../../assets/home/home_s1_1.webp");
     background-size: cover;
-    background-position: left;
+    background-position: 100% 83%;
     background-repeat: no-repeat;
     mask-image: url("../../assets/home/home_s1_mask.png");
     mask-size: 100%;
@@ -338,7 +338,9 @@
     height: 20%;
     margin-bottom: 20px;
 }
-
+.home_s3_text h4{
+    font-size: 1em;
+}
 .home_s3_icon svg {
     width: 50%;
     height: 100%;
@@ -383,6 +385,7 @@
     align-items: center;
     flex-direction: column;
     width: 80%;
+    margin-bottom: 30px;
 }
 
 .home_s4_title span {
@@ -425,7 +428,7 @@
 }
 
 .home_s4_item h1 {
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
     margin: 0;
@@ -434,7 +437,7 @@
 }
 
 .home_s4_item p {
-    font-size: 20px;
+    font-size: 14px;
     color: white;
     padding: 0;
     margin: 0;

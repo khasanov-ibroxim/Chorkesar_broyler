@@ -1,6 +1,10 @@
 .about_s2{
     padding: 100px 0;
 }
+
+.about_s1 h3{
+    font-size: 20px;
+}
 .about_s2_title span{
     font-family: var(--fontC), sans-serif;
     font-size: 32px;
@@ -29,7 +33,7 @@
 .about_s2_text ul li{
     display: flex;
     font-size: 20px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
     font-weight: 300;
@@ -38,8 +42,8 @@
 }
 .about_s2_text ul li svg{
     color: #F6CE21;
-    font-size: 30px;
-    width: 60px;
+    font-size: 25px;
+    width: 30px;
 }
 
 .about_s2_text a{
@@ -65,7 +69,7 @@
     height: 100%;
     aspect-ratio: 1/1;
     padding: 1rem;
-    background-image: url("../../assets/about/about_s2_img.png");
+    background-image: url("../../assets/about/about_s2_img.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,7 +153,9 @@
     transform: rotateZ(0) ;
     height: 40px;
 }
-
+.about_s5 .home_s3_text{
+    height: 80%;
+}
 @media screen and (max-width: 1000px){
     .about_s2_item{
         padding-top: 30px;

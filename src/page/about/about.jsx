@@ -5,23 +5,27 @@ import shape from "../../assets/img/shape.svg";
 import {Link} from "react-router-dom";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
-import about_s1 from "../../assets/about/about_s1_img.png"
-import about_s3 from "../../assets/about/about_s3_img.png"
+import about_header from "../../assets/about/about_header.webp"
+import about_s1 from "../../assets/about/about_s1_img.webp"
+import about_s3 from "../../assets/home/home_s1_1.webp"
 import UnarchiveIcon from "@mui/icons-material/Unarchive";
 
 function About(props) {
     return (
         <div>
-            <div className="contact_header">
+            <div className="contact_header" style={{
+                background:`url(${about_header}) no-repeat`,
+                backgroundSize:'cover'
+            }}>
                 <div className="header_shape_top">
                     <img src={shape} alt=""/>
                 </div>
                 <div className="contact_opacity"></div>
                 <div className="contact_header_left">
-                    <h1>About Us</h1>
+                    <h1>О нас</h1>
                 </div>
                 <div className="contact_header_right">
-                    Home | About Us
+                    Главная | О нас
                 </div>
                 <div className="header_shape_bottom">
                     <img src={shape} alt=""/>
@@ -30,35 +34,40 @@ function About(props) {
             <section className={"home_s1 about_s1"}>
                 <div className="container">
                     <div className="home_s1_title">
-                        <span>We prioritize poultry welfare</span>
-                        <h2>We offer healthy & natural poultry such as chickens & turkeys</h2>
-                        <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <span>С любовью к каждой курочке и вашему столу</span>
+                        <h2>CHORKESAR- ЛИДЕР В ПРОИЗВОДСТВЕ КУРИНОГО МЯСА </h2>
+                        <p>Качество, которое чувствуешь с первого кусочка</p>
                     </div>
-                    <div className="row home_s1_box mt-5" >
+                    <div className="row home_s1_box mt-5">
                         <div className="col-lg-6 home_s1_img">
                             <div className="home_s1_element  wow animate__animated  animate__rubberBand">
                                 <div className="home_s1_element-blob_line"></div>
                             </div>
                             <div className="home_s1_blob"
-                                 style={{background: `url(${about_s1})`, backgroundPosition: "33% 63%"}}>
+                                 style={{background: `url(${about_s1}) no-repeat`, backgroundPosition: "33% 63%" ,
+                                 backgroundSize:"cover"
+                                 }}>
                             </div>
 
                             <div className="home_s1_element_iz"></div>
                         </div>
                         <div className="col-lg-6 home_s1_item_box">
                             <div className="home_s1_item" data-aos="fade-left">
-                                <h3>We invest in modern facilities and technologies for optimal bird care</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                    ullamcorper mattis, pulvinar dapibus leo.
+                                <h3>Мы начали свой путь в 2013 году с целью стать лидерами в производстве мяса и
+                                    яиц.</h3>
+                                <p> С
+                                    тех пор наша компания постоянно развивается, внедряя новейшие технологии и расширяя
+                                    производственные мощности.
                                 </p>
                             </div>
                             <div className="home_s1_item" data-aos="fade-left">
-                                <h3>We promise you a reliable delivery of quality eggs at wholesale prices</h3>
+                                <h3>Основное направление нашей деятельности — производство мяса птицы и инкубационных
+                                    яиц.</h3>
                             </div>
                             <div className="home_s1_item_tell" data-aos="fade-left">
                                 <span><LocalPhoneIcon/></span>
                                 <div className="home_s1_item_tell_text">
-                                    <h2>How can I place an order?</h2>
+                                    <h2>Свяжитесь с нами</h2>
                                     <h3>+998 99 123 32 32</h3>
                                 </div>
 
@@ -73,24 +82,22 @@ function About(props) {
                     <div className="row">
                         <div className="col-lg-6" data-aos="fade-right">
                             <div className="about_s2_title">
-                                <span>Big, fat, tasty franks</span>
-                                <h2>We are prepared to raise new flocks in our homes even before the chicks hatch</h2>
-                                <p>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                                <span>Доверьтесь нам</span>
+                                <h2>НАШИ КЛЮЧЕВЫЕ НАПРАВЛЕНИЯ</h2>
+                                <p>Производство инкубационных яиц</p>
                             </div>
                             <div className="about_s2_text">
                                 <ul>
                                     <li>
                                         <CheckCircleIcon/>
-                                        We have more than 50 partner restaurants and participate in several farmers'
-                                        markets.
+                                        Выращивание бройлерных цыплят
                                     </li>
                                     <li>
                                         <CheckCircleIcon/>
-                                        Enjoy high-quality poultry on your table with our specially cared-for poultry
-                                        farm.
+                                        Производство мяса птицы
                                     </li>
                                 </ul>
-                                <Link to={"#"}>See our Products</Link>
+                                <Link to={"/product"}>Продукция</Link>
                             </div>
                         </div>
                         <div className="col-lg-6 about_s2_item" data-aos="fade-left">
@@ -113,29 +120,34 @@ function About(props) {
                             </div>
                             <div className="home_s1_element-blob_line"></div>
                             <div className="home_s1_blob"
-                                 style={{background: `url(${about_s3})`, backgroundSize: "cover"}}>
+                                 style={{background: `url(${about_s3}) no-repeat`, backgroundSize: "cover" ,
+                                 backgroundPosition:"52% 75%"
+                                 }}>
                             </div>
 
                             <div className="home_s1_element_iz"></div>
                         </div>
                         <div className="col-lg-6 home_s1_item_box" data-aos="fade-left">
                             <div className="home_s1_title">
-                                <span>Healthy & happy</span>
-                                <h2>All of our birds have free access to nests, perches, scratch areas to dust bathe,
-                                    water, and feed</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                    ullamcorper mattis, pulvinar dapibus leo.
+                                <span>Племенное производство и инкубация</span>
+                                <h2>В нашем комплексе осуществляется импорт племенных цыплят из Венгрии. </h2>
+                                <p>
+                                    Эти цыплята
+                                    выращиваются для получения инкубационных яиц, которые затем используются для
+                                    выведения нового поколения.
+
+                                    Сразу после вылупления цыплята передаются в бройлерные цеха, где они растут и
+                                    развиваются в течение 30–40 дней.
                                 </p>
                             </div>
 
                             <div className="home_s1_item">
-                                <h3>We are a family-owned business that has been supplying quality poultry since
-                                    1983</h3>
+                                <h3>На каждом этапе их содержания особое внимание
+                                    уделяется условиям питания и ухода, что обеспечивает здоровье и быстрое развитие
+                                    птиц.</h3>
                             </div>
 
-                            <Link to={"#"}>
-                                Contact Us
-                            </Link>
+                            <Link to={"/contact"}>Свяжитесь с нами</Link>
                         </div>
                     </div>
                 </div>
@@ -154,8 +166,8 @@ function About(props) {
                                 <UnarchiveIcon/>
                             </div>
                             <div className="home_s3_text">
-                                <h4>Products Range</h4>
-                                <p>Felis bibendum ut tristique et egestas quis. Risus nullam eget felis eget.</p>
+                                <h4>ИСТОРИЯ КОМПАНИИ</h4>
+                                <p>С 2013 года производство мяса и яиц</p>
                             </div>
                         </div>
                         <div className="col-lg-3 home_s3_item">
@@ -163,8 +175,8 @@ function About(props) {
                                 <UnarchiveIcon/>
                             </div>
                             <div className="home_s3_text">
-                                <h4>Quality Matters</h4>
-                                <p>Felis bibendum ut tristique et egestas quis. Risus nullam eget felis eget.</p>
+                                <h4>НАШИ НАПРАВЛЕНИЯ</h4>
+                                <p>Производство инкубационных яиц, выращивание бройлерных цыплят и производство мяса птицы.</p>
                             </div>
                         </div>
                         <div className="col-lg-3 home_s3_item">
@@ -172,8 +184,8 @@ function About(props) {
                                 <UnarchiveIcon/>
                             </div>
                             <div className="home_s3_text">
-                                <h4>Satisfaction</h4>
-                                <p>Felis bibendum ut tristique et egestas quis. Risus nullam eget felis eget.</p>
+                                <h4>КЛАСТЕРНАЯ СИСТЕМА</h4>
+                                <p>От импорта племенных цыплят из Венгрии до выпуска готовой продукции.</p>
                             </div>
                         </div>
                         <div className="col-lg-3 home_s3_item">
@@ -181,8 +193,8 @@ function About(props) {
                                 <UnarchiveIcon/>
                             </div>
                             <div className="home_s3_text">
-                                <h4>Free Shipping</h4>
-                                <p>Felis bibendum ut tristique et egestas quis. Risus nullam eget felis eget.</p>
+                                <h4>НАШИ СПЕЦИАЛИСТЫ</h4>
+                                <p>Команда из более чем 170 профессионалов, обеспечивающих высокое качество и надежность работы.</p>
                             </div>
                         </div>
                     </div>

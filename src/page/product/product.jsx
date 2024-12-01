@@ -3,7 +3,7 @@ import "./product.css"
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import {Link} from "react-router-dom";
 import UnarchiveIcon from "@mui/icons-material/Unarchive";
-import about_s3 from "../../assets/about/about_s3_img.png";
+import about_s3 from "../../assets/home/home_s1_1.webp";
 import shape from "../../assets/img/shape.svg";
 
 function Product(props) {
@@ -113,7 +113,10 @@ function Product(props) {
                             </div>
                             <div className="home_s1_element-blob_line wow animate__animated  animate__tada  "></div>
                             <div className="home_s1_blob"
-                                 style={{background: `url(${about_s3})`, backgroundSize: "cover"}}>
+                                 style={{background: `url(${about_s3}) no-repeat`, backgroundSize: "cover" ,
+                                     backgroundPosition:"52% 75%"
+                                 }}
+                            >
                             </div>
 
                             <div className="home_s1_element_iz"></div>

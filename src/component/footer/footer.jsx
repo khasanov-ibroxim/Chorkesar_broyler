@@ -15,9 +15,9 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-4">
                             <div className="footer_item footer_item_first">
-                                <Link to={"#"}><img src={logo} alt=""/>Toviq</Link>
-                                <p>At our poultry farm, our customers can be sure that they are buying high-quality
-                                    poultry meat produced with care and attention to every detail.
+                                <Link to={"#"}><img src={logo} alt=""/></Link>
+                                <p>
+                                    Остались вопросы или нужна дополнительная информация? Мы всегда открыты для общения.
                                 </p>
                                 <div className="footer_item_social">
                                     <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
@@ -29,21 +29,21 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-4">
                             <div className="footer_item footer_item_link">
-                                <h3>Our Links</h3>
+                                <h3>ССЫЛКИ</h3>
                                 <ul>
                                     <li><Link to={"#"}><KeyboardArrowRightIcon/>Главная</Link></li>
-                                    <li><Link to={"#"}><KeyboardArrowRightIcon/>о нас</Link></li>
-                                    <li><Link to={"#"}><KeyboardArrowRightIcon/>Product</Link></li>
-                                    <li><Link to={"#"}><KeyboardArrowRightIcon/>Contact</Link></li>
+                                    <li><Link to={"#"}><KeyboardArrowRightIcon/>О нас</Link></li>
+                                    <li><Link to={"#"}><KeyboardArrowRightIcon/>Продукция</Link></li>
+                                    <li><Link to={"#"}><KeyboardArrowRightIcon/>Контакты</Link></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="footer_item">
                                 <h3>НАША ПОЧТА</h3>
-                                <p>Мы всегда на связи — пишите нам!</p>
+                                <p>На связи с вами</p>
                                 <div className="footer_item_send">
-                                    <a href={"mailto:email-hamkornur@gmail.com"}> Отправить сообщение</a>
+                                    <a href={"mailto:email@gmail.com"}> Отправить сообщение</a>
                                 </div>
                             </div>
                         </div>
