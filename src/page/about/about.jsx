@@ -84,7 +84,7 @@ function About(props) {
                             <div className="about_s2_title">
                                 <span>Доверьтесь нам</span>
                                 <h2>НАШИ КЛЮЧЕВЫЕ НАПРАВЛЕНИЯ</h2>
-                                <p>Производство инкубационных яиц</p>
+                                <p>Натуральность и свежесть </p>
                             </div>
                             <div className="about_s2_text">
                                 <ul>
@@ -95,6 +95,10 @@ function About(props) {
                                     <li>
                                         <CheckCircleIcon/>
                                         Производство мяса птицы
+                                    </li>
+                                    <li>
+                                        <CheckCircleIcon/>
+                                        Производство инкубационных яиц
                                     </li>
                                 </ul>
                                 <Link to={"/product"}>Продукция</Link>

@@ -62,7 +62,7 @@ function Home(props) {
                     <div className="home_s1_title">
                         <span>Сочные вкусы, выверенные стандарты</span>
                         <h2>КАЧЕСТВО, КОТОРОЕ ЧУВСТВУЕШЬ С ПЕРВОГО КУСОЧКА</h2>
-                        <p>Ваш выбор для семейных ужиновВаш выбор для семейных ужинов.</p>
+                        <p>Ваш выбор для семейных ужинов.</p>
                     </div>
                     <div className="row home_s1_box mt-5">
                         <div className="col-lg-6 home_s1_img">
@@ -102,7 +102,7 @@ function Home(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 home_s2_text" data-aos="fade-right">
-                            <h4>От фермы до вашего стола</h4>
+                            <h4>Качество, проверенное временем</h4>
                             <h1>ДОВЕРИЕ МИЛЛИОНОВ-НАША ГЛАВНАЯ НАГРАДА</h1>
                             <p>Мы тщательно следим за каждым этапом: от выращивания бройлеров до поставки свежего
                                 куриного мяса.</p>
@@ -280,11 +280,10 @@ function Home(props) {
             <section className={'home_s7'}>
                 <div className="container">
                     <div className="home_s7_title">
-                        <div className="home_s7_title_text" data-aos="fade-right">
-                            <span>Our blog</span>
-                            <h3>Latest news</h3>
+                        <div className="home_s7_title_text" data-aos="fade-up">
+                            <span>Свежесть и натуральность</span>
+                            <h3>УЗНАЙТЕ, КАК МЫ ОБЕСПЕЧИВАЕМ ВЫСОКИЕ СТАНДАРТЫ</h3>
                         </div>
-                        <Link to={"#"} data-aos="fade-left">MORE POSTS</Link>
                     </div>
 
                     <div className="row">
@@ -293,11 +292,11 @@ function Home(props) {
                                 <img src={home_header_1} alt=""/>
                             </div>
                             <div className="home_s7_item_text">
-                                <h4>Optimal water consumption rate for layers and broilers</h4>
-                                <p>Iaculis at erat pellentesque adipiscing commodo elit. In tellus integer feugiat
-                                    scelerisque varius morbi enim nunc. Cras pulvinar mattis nunc sed blandit libero
-                                    volutpat sed</p>
-                                <Link to={"#"}>Read More <DoubleArrowIcon/></Link>
+                                <h4> Строгий контроль качества </h4>
+                                <p>Вся продукция проходит тщательную проверку на каждом этапе: от выращивания птицы до
+                                    упаковки. Мы гарантируем, что каждая бройлерная курица соответствует высшим
+                                    стандартам безопасности и качества.</p>
+                                <Link to={"#"}>Подробно<DoubleArrowIcon/></Link>
                             </div>
                         </div>
                         <div data-aos="fade-up" className="col-lg-4 home_s7_item">
@@ -305,16 +304,11 @@ function Home(props) {
                                 <img src={home_header_2} alt=""/>
                             </div>
                             <div className="home_s7_item_text">
-                                <h4>Optimal water consumption rate for layers and broilers</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque dolorum eos eveniet
-                                    itaque. Atque corporis magnam officia quasi. A ad amet asperiores atque corporis
-                                    deleniti eaque enim error esse harum, illum labore laboriosam magnam minima minus
-                                    nihil nisi officia quaerat quia repellat repellendus saepe sit temporibus ut velit
-                                    voluptates voluptatum! Accusantium ad corporis doloribus qui. Ab ad asperiores at
-                                    atque consectetur corporis, cum debitis, dicta eos exercitationem facilis molestiae
-                                    natus necessitatibus numquam officia possimus quidem recusandae sapiente tenetur
-                                    totam!</p>
-                                <Link to={"#"}>Read More <DoubleArrowIcon/></Link>
+                                <h4>Натуральность и свежесть </h4>
+                                <p>Мы используем только натуральные корма и заботимся о здоровье птиц, чтобы мясо
+                                    оставалось вкусным и полезным. Свежесть каждой упаковки гарантируется благодаря
+                                    современным технологиям хранения и транспортировки.</p>
+                                <Link to={"#"}>Подробно <DoubleArrowIcon/></Link>
                             </div>
                         </div>
                         <div data-aos="fade-left" className="col-lg-4 home_s7_item">
@@ -322,11 +316,11 @@ function Home(props) {
                                 <img src={home_header_1} alt=""/>
                             </div>
                             <div className="home_s7_item_text">
-                                <h4>Optimal water consumption rate for layers and broilers</h4>
-                                <p>Iaculis at erat pellentesque adipiscing commodo elit. In tellus integer feugiat
-                                    scelerisque varius morbi enim nunc. Cras pulvinar mattis nunc sed blandit libero
-                                    volutpat sed</p>
-                                <Link to={"#"}>Read More <DoubleArrowIcon/></Link>
+                                <h4>Доверие потребителей</h4>
+                                <p>Доверие миллионов клиентов — наша главная награда. Мы стремимся к прозрачности на
+                                    всех этапах производства и обеспечиваем полную уверенность в качестве нашей
+                                    продукции.</p>
+                                <Link to={"#"}>  Подробно <DoubleArrowIcon/></Link>
                             </div>
                         </div>
                     </div>

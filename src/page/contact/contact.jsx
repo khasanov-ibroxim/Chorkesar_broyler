@@ -34,7 +34,7 @@ function Contact(props) {
                                     <PermPhoneMsgIcon/>
                                 </div>
                                 <div className="contact_box_item_text">
-                                    <h4>Тлефон</h4>
+                                    <h4>Телефон</h4>
                                     <a href="tel:+998951204111">+998 95 120 41 11</a>
                                     <a href="tel:+998972570384">+998 97 257 03 84</a>
                                     <a href="tel:+998996330053">+998 99 633 00 53</a>
@@ -84,7 +84,7 @@ function Contact(props) {
                                 </div>
                                 <form action="#">
                                     <input type="text" placeholder={"Имя"}/>
-                                    <input type="text" placeholder={"Тлефон номер"}/>
+                                    <input type="text" placeholder={"Телефон номер"}/>
                                     <textarea rows="5" placeholder="Сообщение"/>
                                     <button>Отправить </button>
                                 </form>
