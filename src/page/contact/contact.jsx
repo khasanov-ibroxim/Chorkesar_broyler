@@ -86,18 +86,17 @@ function Contact(props) {
                                     <input type="text" placeholder={"Имя"}/>
                                     <input type="text" placeholder={"Телефон номер"}/>
                                     <textarea rows="5" placeholder="Сообщение"/>
-                                    <button>Отправить </button>
+                                    <button>Отправить</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-12 contact_map">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22977.426229027522!2d69.20601599999999!3d41.2188672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae6136b1d6ff33%3A0x3c951a01576e8486!2z0KLQoNCmIEdvbGRlbiBsaWZl!5e1!3m2!1sru!2s!4v1732736728117!5m2!1sru!2s"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3015.9138330226765!2d71.055892!3d40.895705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDUzJzQ0LjUiTiA3McKwMDMnMjEuMiJF!5e0!3m2!1sru!2s!4v1733592898631!5m2!1sru!2s"
                             width="100%" height="450" allowFullScreen="" loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                            style={{borderRadius: "20px"}}
-                        ></iframe>
+                            style={{borderRadius: "20px"}}></iframe>
                     </div>
                 </div>
             </section>
