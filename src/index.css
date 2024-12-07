@@ -17,3 +17,6 @@ body {
 ul {
     list-style: none;
 }
+a{
+    transition: 0.4s;
+}

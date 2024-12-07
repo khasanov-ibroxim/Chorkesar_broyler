@@ -10,6 +10,12 @@ import about_s1 from "../../assets/about/about_s1_img.webp"
 import about_s3 from "../../assets/home/home_s1_1.webp"
 import UnarchiveIcon from "@mui/icons-material/Unarchive";
 
+import about_s5_istorya from "../../assets/icon/istorya.png"
+import about_s5_napravleniya from "../../assets/icon/napravleniya.png"
+import about_s5_sistema from "../../assets/icon/sistema.png"
+import about_s5_spetsalist from "../../assets/icon/spetsalisti.png"
+
+
 function About(props) {
     return (
         <div>
@@ -17,9 +23,7 @@ function About(props) {
                 background:`url(${about_header}) no-repeat`,
                 backgroundSize:'cover'
             }}>
-                <div className="header_shape_top">
-                    <img src={shape} alt=""/>
-                </div>
+
                 <div className="contact_opacity"></div>
                 <div className="contact_header_left">
                     <h1>О нас</h1>
@@ -27,9 +31,7 @@ function About(props) {
                 <div className="contact_header_right">
                     Главная | О нас
                 </div>
-                <div className="header_shape_bottom">
-                    <img src={shape} alt=""/>
-                </div>
+
             </div>
             <section className={"home_s1 about_s1"}>
                 <div className="container">
@@ -64,13 +66,15 @@ function About(props) {
                                 <h3>Основное направление нашей деятельности — производство мяса птицы и инкубационных
                                     яиц.</h3>
                             </div>
+                            <div className="home_s1_item_sertefication" data-aos="fade-left">
+                                <a href="#">Сертификация</a>
+                            </div>
                             <div className="home_s1_item_tell" data-aos="fade-left">
                                 <span><LocalPhoneIcon/></span>
                                 <div className="home_s1_item_tell_text">
                                     <h2>Свяжитесь с нами</h2>
                                     <h3>+998 99 123 32 32</h3>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -167,7 +171,7 @@ function About(props) {
                     <div className="row">
                         <div className="col-lg-3 home_s3_item">
                             <div className="home_s3_icon">
-                                <UnarchiveIcon/>
+                                <img src={about_s5_istorya}/>
                             </div>
                             <div className="home_s3_text">
                                 <h4>ИСТОРИЯ КОМПАНИИ</h4>
@@ -176,7 +180,7 @@ function About(props) {
                         </div>
                         <div className="col-lg-3 home_s3_item">
                             <div className="home_s3_icon">
-                                <UnarchiveIcon/>
+                                <img src={about_s5_napravleniya}/>
                             </div>
                             <div className="home_s3_text">
                                 <h4>НАШИ НАПРАВЛЕНИЯ</h4>
@@ -185,7 +189,7 @@ function About(props) {
                         </div>
                         <div className="col-lg-3 home_s3_item">
                             <div className="home_s3_icon">
-                                <UnarchiveIcon/>
+                                <img src={about_s5_sistema} alt=""/>
                             </div>
                             <div className="home_s3_text">
                                 <h4>КЛАСТЕРНАЯ СИСТЕМА</h4>
@@ -194,7 +198,7 @@ function About(props) {
                         </div>
                         <div className="col-lg-3 home_s3_item">
                             <div className="home_s3_icon">
-                                <UnarchiveIcon/>
+                                <img src={about_s5_spetsalist} alt=""/>
                             </div>
                             <div className="home_s3_text">
                                 <h4>НАШИ СПЕЦИАЛИСТЫ</h4>

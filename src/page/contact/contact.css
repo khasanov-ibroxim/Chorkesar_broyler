@@ -1,7 +1,7 @@
 .contact_header {
     background: url("../../assets/contact/contact_header.png") no-repeat center center;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
 
     display: flex;
     justify-content: space-between;
@@ -136,11 +136,16 @@
 .contact_right form button {
     width: 200px;
     height: 45px;
-    background: #F6CE21;
+    background: #84c224;
     border-radius: 20px;
     border: none;
     outline: none;
     font-weight: 700;
+    color: #FFFFFF;
+    transition: 0.4s;
+}
+.contact_right form button:hover{
+    background: #1E4616;
 }
 
 .contact_map {

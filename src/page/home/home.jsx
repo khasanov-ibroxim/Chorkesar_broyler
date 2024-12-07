@@ -15,14 +15,16 @@ import UnarchiveIcon from '@mui/icons-material/Unarchive';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import {Link} from "react-router-dom";
 import {EyeOutlined} from "@ant-design/icons";
+import home_s3_sveji from "../../assets/icon/sveji.png"
+import home_s3_kantrol from "../../assets/icon/kantrol.png"
+import home_s3_texnalogiya from "../../assets/icon/texnalogiya.png"
+import home_s3_eko from "../../assets/icon/eko.png"
 
 function Home(props) {
     return (
         <div className={"home_page"}>
             <header className="home-header">
-                <div className="header_shape_top">
-                    <img src={shape} alt=""/>
-                </div>
+
                 <span className="opacity_header"></span>
                 <div className="home_header_text">
                     <span>От инкубатора до вашего стола</span>
@@ -52,9 +54,6 @@ function Home(props) {
                         </div>
                     </SwiperSlide>
                 </Swiper>
-                <div className="header_shape_bottom">
-                    <img src={shape} alt=""/>
-                </div>
             </header>
 
             <section className={"home_s1"}>
@@ -126,7 +125,7 @@ function Home(props) {
                     <div className="row">
                         <div className="col-lg-3 home_s3_item">
                             <div className="home_s3_icon">
-                                <UnarchiveIcon/>
+                                <img src={home_s3_sveji} alt=""/>
                             </div>
                             <div className="home_s3_text">
                                 <h4>СВЕЖЕСТЬ КАЖДЫЙ ДЕНЬ</h4>
@@ -135,7 +134,7 @@ function Home(props) {
                         </div>
                         <div className="col-lg-3 home_s3_item">
                             <div className="home_s3_icon">
-                                <UnarchiveIcon/>
+                                <img src={home_s3_kantrol} alt=""/>
                             </div>
                             <div className="home_s3_text">
                                 <h4>КОНТРОЛЬ НА КАЖДОМ ЭТАПЕ</h4>
@@ -144,7 +143,7 @@ function Home(props) {
                         </div>
                         <div className="col-lg-3 home_s3_item">
                             <div className="home_s3_icon">
-                                <UnarchiveIcon/>
+                                <img src={home_s3_texnalogiya} alt=""/>
                             </div>
                             <div className="home_s3_text">
                                 <h4>СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h4>
@@ -153,7 +152,7 @@ function Home(props) {
                         </div>
                         <div className="col-lg-3 home_s3_item">
                             <div className="home_s3_icon">
-                                <UnarchiveIcon/>
+                                <img src={home_s3_eko} alt=""/>
                             </div>
                             <div className="home_s3_text">
                                 <h4>НАТУРАЛЬНО И ЭКОЛОГИЧНО</h4>

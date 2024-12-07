@@ -10,18 +10,13 @@ function Product(props) {
     return (
         <div>
             <div className="contact_header">
-                <div className="header_shape_top">
-                    <img src={shape} alt=""/>
-                </div>
+
                 <div className="contact_opacity"></div>
                 <div className="contact_header_left">
                     <h1>Product</h1>
                 </div>
                 <div className="contact_header_right">
                     Home | Product
-                </div>
-                <div className="header_shape_bottom">
-                    <img src={shape} alt=""/>
                 </div>
             </div>
             <section className={"product_s1 about_s2"}>

@@ -26,7 +26,7 @@
 
 .home-header {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -87,18 +87,22 @@
 }
 
 .home_header_text a {
-    background: #F6CE21;
+    background: #84c224;
     width: 200px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #1E4616;
+    color: #FFFFFF;
     font-weight: 700;
     border-radius: 20px;
+    transition: 0.3s;
 }
 
+.home_header_text a:hover{
+    background: #1E4616;
+}
 .home_s1 {
     width: 100%;
     background: #f7f7f7;
@@ -260,13 +264,17 @@
 }
 
 .home_s2_text a {
-    background: #F6CE21;
-    color: #1E4616;
+    background: #84c224;
+    color: #fff;
     padding: 15px 30px;
     border-radius: 20px;
     text-decoration: none;
     font-weight: 700;
     margin-top: 50px;
+}
+.home_s2_text a:hover{
+    background: #1E4616;
+    color: #fff;
 }
 
 .home_s2_img {
@@ -335,16 +343,16 @@
 
 .home_s3_icon {
     width: 100%;
-    height: 20%;
+    height: 40%;
     margin-bottom: 20px;
 }
 .home_s3_text h4{
     font-size: 1em;
     font-weight: 700;
 }
-.home_s3_icon svg {
-    width: 50%;
-    height: 100%;
+.home_s3_icon img {
+    width: 80px;
+    height: 80px;
     color: #1E4616;
 }
 .home_s6 .home_s3_element_top{
@@ -532,7 +540,9 @@
     .home_s1_img {
         padding-top: 20px;
     }
-
+    .home_s4_item p {
+        font-size: 12px;
+    }
     .home_s4 .col-lg-3 {
         width: 50%;
         display: flex;
@@ -688,6 +698,10 @@
     text-decoration: none;
     color: #1E4616;
     font-weight: 700;
+}
+.home_s8_box_item a:hover{
+    background: #84c224;
+    color: white;
 }
 .home_s8_box_element_top{
     background: url("../../assets/home/home_s4_element.svg") no-repeat center center;

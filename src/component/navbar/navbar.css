@@ -1,16 +1,14 @@
 nav {
     width: 100%;
-    background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);*/
-    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 999;
 }
 
 nav a.logo img {
-    height: 100px;
+    width: 150px;
     object-fit: contain;
 }
 .logo{
@@ -37,15 +35,13 @@ nav ul {
     display: flex;
     margin: 0px;
     grid-gap: 10px;
-    backdrop-filter: blur(15px);
-    background: white;
     align-items: center;
     padding: 10px 7px;
     width: 80%;
     justify-content: space-between;
 }
 nav ul li{
-    border-right: 2px solid #DDDDDD;
+    border-right: 2px solid rgba(2, 243, 2, 0.6);
     width: 100%;
     display: flex;
     align-items: center;
@@ -57,14 +53,13 @@ nav ul li:last-child{
 }
 nav ul li a {
     padding: 5px 7px;
-    color: #1E4616;
+    color: #fff;
     text-decoration: none;
     font-weight: 800;
     font-size: 12px;
-    font-family: var(--pop);
+    font-family: var(--inter);
     text-transform: uppercase;
 }
-
 
 nav button{
     padding: 18px 30px;

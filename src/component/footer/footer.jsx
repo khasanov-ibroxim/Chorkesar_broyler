@@ -7,6 +7,11 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 const Footer = () => {
     const location = useLocation();
     const currentPath = location.pathname;
+
+    const flyTop = ()=>{
+        window.scrollTo(0,0);
+    }
+
     return (
         <>
             <footer>
@@ -31,10 +36,10 @@ const Footer = () => {
                             <div className="footer_item footer_item_link">
                                 <h3>ССЫЛКИ</h3>
                                 <ul>
-                                    <li><Link to={"#"}><KeyboardArrowRightIcon/>Главная</Link></li>
-                                    <li><Link to={"#"}><KeyboardArrowRightIcon/>О нас</Link></li>
-                                    <li><Link to={"#"}><KeyboardArrowRightIcon/>Продукция</Link></li>
-                                    <li><Link to={"#"}><KeyboardArrowRightIcon/>Контакты</Link></li>
+                                    <li><Link to={"/"} onClick={flyTop}><KeyboardArrowRightIcon/>Главная</Link></li>
+                                    <li><Link to={"/about"} onClick={flyTop}><KeyboardArrowRightIcon/>О нас</Link></li>
+                                    <li><Link to={"/product"} onClick={flyTop}><KeyboardArrowRightIcon/>Продукция</Link></li>
+                                    <li><Link to={"/contact"} onClick={flyTop}><KeyboardArrowRightIcon/>Контакты</Link></li>
                                 </ul>
                             </div>
                         </div>

@@ -73,11 +73,14 @@ footer .row {
 }
 .footer_item_social a{
     width: 50px;
-    background: #1E4616;
+    background: #84c224;
     padding: 15px;
     display: flex;
     justify-content: center;
     border-radius: 50%;
+}
+.footer_item_social a:hover{
+    background: #1E4616;
 }
 .footer_item_social a:first-child {
     margin-left: 0;
@@ -88,10 +91,6 @@ footer .row {
     font-size: 18px;
     color: #fff;
     transition: 0.2s;
-}
-.footer_item_social a:hover{
-    background: #F6CE21;
-    color: #1E4616;
 }
 .footer_item_send {
     display: flex;
@@ -117,13 +116,15 @@ footer .row {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 15px;
-    color: #1E4616 !important;
-    background: #F6CE21;
+    color: #fff !important;
+    background: #84c224;
     border: none;
     outline: none;
     text-decoration: none;
 }
-
+.footer_item_send a:hover{
+    background: #1E4616;
+}
 
 .footer_item_link ul{
     padding: 0;

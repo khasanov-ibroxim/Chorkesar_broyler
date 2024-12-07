@@ -6,13 +6,11 @@ import PlaceIcon from '@mui/icons-material/Place';
 import EmailIcon from '@mui/icons-material/Email';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
-function Contact(props) {
+function Contact() {
     return (
         <div className="contact">
             <div className="contact_header">
-                <div className="header_shape_top">
-                    <img src={shape} alt=""/>
-                </div>
+
                 <div className="contact_opacity"></div>
                 <div className="contact_header_left">
                     <h1>Контакты</h1>
@@ -20,9 +18,7 @@ function Contact(props) {
                 <div className="contact_header_right">
                     Главная | Контакты
                 </div>
-                <div className="header_shape_bottom">
-                    <img src={shape} alt=""/>
-                </div>
+
             </div>
 
             <section className="contact_box">
@@ -47,7 +43,7 @@ function Contact(props) {
                                 </div>
                                 <div className="contact_box_item_text">
                                     <h4>Адрес</h4>
-                                    <a href="#">Республика Узбекистан , Наманганская область
+                                    <a href="https://maps.app.goo.gl/bR65G55rTsMx8Hcx9">Республика Узбекистан , Наманганская область
                                         Попский район,
                                         Уйгурсой МФЙ, участок №19</a>
                                 </div>
@@ -93,7 +89,7 @@ function Contact(props) {
                     </div>
                     <div className="col-lg-12 contact_map">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3015.9138330226765!2d71.055892!3d40.895705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDUzJzQ0LjUiTiA3McKwMDMnMjEuMiJF!5e0!3m2!1sru!2s!4v1733592898631!5m2!1sru!2s"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2676.283710060685!2d71.05589824596088!3d40.89571060658807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDUzJzQ0LjUiTiA3McKwMDMnMjEuMiJF!5e1!3m2!1sru!2s!4v1733598443630!5m2!1sru!2s"
                             width="100%" height="450" allowFullScreen="" loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                             style={{borderRadius: "20px"}}></iframe>
