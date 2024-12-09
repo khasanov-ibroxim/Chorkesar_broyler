@@ -56,7 +56,6 @@ function Contact() {
                                     <h4>Почта</h4>
                                     <a href="">broyler01@mail.ru</a>
                                 </div>
-
                             </div>
                             <div className="contact_box_item">
                                 <div className="contact_box_item_icon">
