@@ -53,9 +53,8 @@ function Contact() {
                                     <EmailIcon/>
                                 </div>
                                 <div className="contact_box_item_text">
-                                    <h4>Email</h4>
-                                    <a href="#">Office@gmail.com</a>
-                                    <a href="#">Office2@gmail.com</a>
+                                    <h4>Почта</h4>
+                                    <a href="">broyler01@mail.ru</a>
                                 </div>
 
                             </div>
@@ -64,9 +63,9 @@ function Contact() {
                                     <AccessTimeIcon/>
                                 </div>
                                 <div className="contact_box_item_text">
-                                    <h4>Opening Hours</h4>
-                                    <a href="#">Du - Ju | 8:00 - 20:00</a>
-                                    <a href="#">Sha - Ya | 8:00 - 20:00</a>
+                                    <h4>Время работы</h4>
+                                    <p>с 8:00 до 20:00</p>
+                                    <p>без выходных</p>
                                 </div>
 
                             </div>

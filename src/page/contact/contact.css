@@ -77,10 +77,11 @@
     color: #1E4616;
 }
 
-.contact_box_item a {
+.contact_box_item a , .contact_box_item_text p{
     text-decoration: none;
     color: #595959;
     font-size: 20px;
+    margin: 0;
 }
 
 .contact_box_item_icon svg {
@@ -159,7 +160,7 @@
         width: 44% !important;
     }
 
-    .contact_box_item a {
+    .contact_box_item a , .contact_box_item_text p{
         font-size: 10px;
     }
 
