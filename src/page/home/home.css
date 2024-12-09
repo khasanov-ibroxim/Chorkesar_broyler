@@ -123,6 +123,7 @@
     font-size: 32px;
     font-weight: 700;
     color: #84c224;
+    text-align: center;
 }
 
 .home_s1_title h2 {
@@ -747,6 +748,7 @@
 
     .home_header_text p {
         font-size: 15px;
+        text-align: center;
     }
 
     .home_s1_title h2, .home_s1_title p {

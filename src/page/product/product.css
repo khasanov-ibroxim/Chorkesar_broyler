@@ -15,7 +15,7 @@
 
     transform: rotateZ(25deg);
 }
-
+.home_s1_title h2 {text-align: center}
 @media screen and (max-width: 800px) {
     .home_s1_title h2 {
         font-size: 25px;

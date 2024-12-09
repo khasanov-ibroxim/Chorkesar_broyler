@@ -84,6 +84,9 @@ nav button{
 
 
 @media screen and (max-width: 1000px) {
+    nav{
+        background: #FFFFFF;
+    }
     .navburger{
         display: block;
     }
@@ -122,16 +125,19 @@ nav button{
         border-bottom: 2px solid #DDDDDD;
         justify-content: left;
         background: white;
+
     }
     .menu ul li:last-child{
         border-bottom: none;
     }
+    .active_location a{color: #FFFFFF !important;}
     .menu ul li a {
         font-weight: 700;
         font-size: 14px;
         width: 100%;
         height: 100%;
         padding: 20px;
+        color: black;
     }
     .active_location{
         background: #F6CE21 !important;
