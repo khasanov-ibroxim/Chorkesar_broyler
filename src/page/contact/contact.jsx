@@ -54,7 +54,7 @@ function Contact() {
                                 </div>
                                 <div className="contact_box_item_text">
                                     <h4>Почта</h4>
-                                    <a href="">broyler01@mail.ru</a>
+                                    <a href="mailto:broyler01@mail.ru">broyler01@mail.ru</a>
                                 </div>
                             </div>
                             <div className="contact_box_item">
