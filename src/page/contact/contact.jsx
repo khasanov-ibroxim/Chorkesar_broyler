@@ -45,7 +45,7 @@ function Contact() {
                                     <h4>Адрес</h4>
                                     <a href="https://maps.app.goo.gl/bR65G55rTsMx8Hcx9">Республика Узбекистан , Наманганская область
                                         Попский район,
-                                        Уйгурсой МФЙ, участок №19</a>
+                                        Уйгурсой ОСГ, участок №19</a>
                                 </div>
                             </div>
                             <div className="contact_box_item">
