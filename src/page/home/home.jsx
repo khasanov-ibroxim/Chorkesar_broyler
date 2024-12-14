@@ -5,11 +5,11 @@ import {Autoplay, Zoom, EffectFade} from "swiper/modules";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import "swiper/swiper-bundle.css";
 
-import home_header_1 from "../../assets/home/header_1.webp";
-import home_header_2 from "../../assets/home/header_2.png";
+import home_header_1 from "../../assets/home/home_header.jpg";
+import home_header_2 from "../../assets/home/home_header2.jpg";
 import shape from "../../assets/img/shape.svg"
 
-import home_s2 from "../../assets/home/home_s2.webp"
+import home_s2 from "../../assets/home/home_s2.jpg"
 import {Image} from "antd";
 import UnarchiveIcon from '@mui/icons-material/Unarchive';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
@@ -19,6 +19,7 @@ import home_s3_sveji from "../../assets/icon/sveji.png"
 import home_s3_kantrol from "../../assets/icon/kantrol.png"
 import home_s3_texnalogiya from "../../assets/icon/texnalogiya.png"
 import home_s3_eko from "../../assets/icon/eko.png"
+import home_s6 from "../../assets/home/home_s6.jpg"
 
 function Home(props) {
     return (
@@ -270,7 +271,7 @@ function Home(props) {
                 <div className="home_s3_element_bottom"></div>
             </section>
 
-            <section className={"home_s6"}>
+            <section className={"home_s6"} style={{background:`url(${home_s6}) no-repeat center center` , backgroundSize:"cover"}}>
                 <div className="home_s6_opacity"></div>
                 <div className="home_s3_element_top"></div>
                 <div className="home_s3_element_bottom"></div>

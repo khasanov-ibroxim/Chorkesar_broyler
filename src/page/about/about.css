@@ -71,9 +71,9 @@
     height: 100%;
     aspect-ratio: 1/1;
     padding: 1rem;
-    background-image: url("../../assets/about/about_s2_img.webp");
+    background-image: url("../../assets/about/about_s2.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     mask-image: url("../../assets/home/home_s4_mask.png");
     mask-size: 100%;

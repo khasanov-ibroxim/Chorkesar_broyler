@@ -5,10 +5,10 @@ import shape from "../../assets/img/shape.svg";
 import {Link} from "react-router-dom";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
-import about_header from "../../assets/about/about_header.webp"
+import about_header from "../../assets/about/about_header.jpg"
 import about_s1 from "../../assets/about/about_s1_img.webp"
-import about_s3 from "../../assets/home/home_s1_1.webp"
-import UnarchiveIcon from "@mui/icons-material/Unarchive";
+import about_s3 from "../../assets/about/about_s3.jpg"
+import about_s4 from "../../assets/about/about_s4.jpg"
 
 import about_s5_istorya from "../../assets/icon/istorya.png"
 import about_s5_napravleniya from "../../assets/icon/napravleniya.png"
@@ -20,7 +20,7 @@ function About(props) {
     return (
         <div>
             <div className="contact_header" style={{
-                background:`url(${about_header}) no-repeat`,
+                background:`url(${about_header}) no-repeat center center`,
                 backgroundSize:'cover'
             }}>
 
@@ -128,8 +128,8 @@ function About(props) {
                             </div>
                             <div className="home_s1_element-blob_line"></div>
                             <div className="home_s1_blob"
-                                 style={{background: `url(${about_s3}) no-repeat`, backgroundSize: "cover" ,
-                                 backgroundPosition:"52% 75%"
+                                 style={{background: `url(${about_s3}) no-repeat`, backgroundSize: "100%" ,
+                                 backgroundPosition:"left"
                                  }}>
                             </div>
 
@@ -161,7 +161,7 @@ function About(props) {
                 </div>
             </section>
 
-            <section className={"about_s4 home_s6"}>
+            <section className={"about_s4 home_s6"} style={{background:`url(${about_s4}) no-repeat center center`, backgroundSize:'cover'}}>
                 <div className="home_s6_opacity"></div>
                 <div className="home_s3_element_top"></div>
             </section>
