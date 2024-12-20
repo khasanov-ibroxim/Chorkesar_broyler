@@ -9,6 +9,7 @@ import home_header_1 from "../../assets/home/home_header.jpg";
 import home_header_2 from "../../assets/home/home_header2.jpg";
 import shape from "../../assets/img/shape.svg"
 
+import home_s1 from "../../assets/home/home_s1.jpg"
 import home_s2 from "../../assets/home/home_s2.jpg"
 import {Image} from "antd";
 import UnarchiveIcon from '@mui/icons-material/Unarchive';
@@ -20,6 +21,14 @@ import home_s3_kantrol from "../../assets/icon/kantrol.png"
 import home_s3_texnalogiya from "../../assets/icon/texnalogiya.png"
 import home_s3_eko from "../../assets/icon/eko.png"
 import home_s6 from "../../assets/home/home_s6.jpg"
+
+import gallery_1 from "../../assets/home/galarey/gallery_1.jpg"
+import gallery_2 from "../../assets/home/galarey/gallery_2.jpg"
+import gallery_3 from "../../assets/home/galarey/gallery_3.jpg"
+import gallery_4 from "../../assets/home/galarey/gallery_4.jpg"
+import gallery_5 from "../../assets/home/galarey/gallery_5.jpg"
+import gallery_6 from "../../assets/home/galarey/gallery_6.jpg"
+
 
 function Home(props) {
     return (
@@ -69,7 +78,7 @@ function Home(props) {
                             <div className="home_s1_element wow animate__animated  animate__rubberBand">
                                 <div className="home_s1_element-blob_line"></div>
                             </div>
-                            <div className="home_s1_blob">
+                            <div className="home_s1_blob" style={{backgroundImage: `url(${home_s1})`}}>
                             </div>
 
                             <div className="home_s1_element_iz"></div>
@@ -219,7 +228,7 @@ function Home(props) {
                     </div>
                     <div className="gallery-container">
                         <div className="gallery-item">
-                            <Image src={home_header_1} alt=""
+                            <Image src={gallery_1} alt=""
                                    preview={{
                                        mask: <div className={"preview_box"}><EyeOutlined/> <span>Открыть</span>
                                        </div>
@@ -227,7 +236,7 @@ function Home(props) {
                             />
                         </div>
                         <div className="gallery-item">
-                            <Image src={home_header_1} alt=""
+                            <Image src={gallery_2} alt=""
                                    preview={{
                                        mask: <div className={"preview_box"}><EyeOutlined/> <span>Открыть</span>
                                        </div>
@@ -235,7 +244,7 @@ function Home(props) {
                             />
                         </div>
                         <div className="gallery-item">
-                            <Image src={home_header_1} alt=""
+                            <Image src={gallery_3} alt=""
                                    preview={{
                                        mask: <div className={"preview_box"}><EyeOutlined/> <span>Открыть</span>
                                        </div>
@@ -243,7 +252,7 @@ function Home(props) {
                             />
                         </div>
                         <div className="gallery-item">
-                            <Image src={home_header_1} alt=""
+                            <Image src={gallery_4} alt=""
                                    preview={{
                                        mask: <div className={"preview_box"}><EyeOutlined/> <span>Открыть</span>
                                        </div>
@@ -251,7 +260,7 @@ function Home(props) {
                             />
                         </div>
                         <div className="gallery-item">
-                            <Image src={home_header_1} alt=""
+                            <Image src={gallery_5} alt=""
                                    preview={{
                                        mask: <div className={"preview_box"}><EyeOutlined/> <span>Открыть</span>
                                        </div>
@@ -259,7 +268,7 @@ function Home(props) {
                             />
                         </div>
                         <div className="gallery-item">
-                            <Image src={home_header_1} alt=""
+                            <Image src={gallery_6} alt=""
                                    preview={{
                                        mask: <div className={"preview_box"}><EyeOutlined/> <span>Открыть</span>
                                        </div>
