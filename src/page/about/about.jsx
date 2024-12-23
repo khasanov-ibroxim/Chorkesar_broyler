@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./about.css"
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import shape from "../../assets/img/shape.svg";
@@ -14,9 +14,17 @@ import about_s5_istorya from "../../assets/icon/istorya.png"
 import about_s5_napravleniya from "../../assets/icon/napravleniya.png"
 import about_s5_sistema from "../../assets/icon/sistema.png"
 import about_s5_spetsalist from "../../assets/icon/spetsalisti.png"
+import {Image} from "antd";
 
+import sertefikat_1 from "../../assets/about/sertefikat_1.jpg"
+import sertefikat_2 from "../../assets/about/sertefikat_2.jpg"
+import sertefikat_3 from "../../assets/about/sertefikat_3.jpg"
+import sertefikat_4 from "../../assets/about/sertefikat_4.jpg"
 
 function About(props) {
+
+    const [visible, setVisible] = useState(false);
+
     return (
         <div>
             <div className="contact_header" style={{
@@ -67,7 +75,7 @@ function About(props) {
                                     яиц.</h3>
                             </div>
                             <div className="home_s1_item_sertefication" data-aos="fade-left">
-                                <a href="#">Сертификация</a>
+                                <button  onClick={() => setVisible(true)}>Сертификация</button>
                             </div>
                             <div className="home_s1_item_tell" data-aos="fade-left">
                                 <span><LocalPhoneIcon/></span>
@@ -80,6 +88,23 @@ function About(props) {
                     </div>
                 </div>
             </section>
+
+
+
+            <Image.PreviewGroup
+                style={{display: 'none',}}
+                preview={{
+                    visible,
+                    onVisibleChange: (value) => {
+                        setVisible(value);
+                    },
+                }}
+            >
+                <Image src={sertefikat_1} style={{display: 'none',}}/>
+                <Image src={sertefikat_2} style={{display: 'none',}}/>
+                <Image src={sertefikat_3} style={{display: 'none',}}/>
+                <Image src={sertefikat_4} style={{display: 'none',}}/>
+            </Image.PreviewGroup>
 
             <section className={"about_s2"}>
                 <div className="container">

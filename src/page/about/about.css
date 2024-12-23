@@ -104,7 +104,7 @@
 .about_s3 .home_s1_item h3{
     font-size: 20px;
 }
-.home_s1 .home_s1_item_box a{
+.home_s1 .home_s1_item_box a , .home_s1 .home_s1_item_box button{
     background: #84c224;
     width: 200px;
     height: 50px;
@@ -115,8 +115,10 @@
     color: #fff;
     font-weight: 700;
     border-radius: 20px;
+    outline: none;
+    border: none;
 }
-.home_s1 .home_s1_item_box a:hover{
+.home_s1 .home_s1_item_box a:hover , .home_s1 .home_s1_item_box button:hover{
     background: #1E4616;
 }
 .about_s3 .home_s1_element{
