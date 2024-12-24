@@ -347,7 +347,7 @@ function Home(props) {
                                     вашем дне.
                                 </p>
                             </div>
-                            <Link to={"/contact"} onClick={()=>{window.scroll(top)}}>КОТАКТЫ</Link>
+                            <Link to={"/contact"} onClick={()=>{window.scroll(top)}}>Контакты</Link>
                         </div>
                         <div className="home_s8_box_element_bottom"></div>
                     </div>

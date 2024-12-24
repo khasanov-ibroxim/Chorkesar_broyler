@@ -15,13 +15,13 @@ function Contact() {
                 <div className="contact_header_left">
                     <h1>Контакты</h1>
                 </div>
-                <div className="contact_header_right">
+                <div className="contact_header_right" >
                     Главная | Контакты
                 </div>
 
             </div>
 
-            <section className="contact_box">
+            <section className="contact_box" >
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-7">
