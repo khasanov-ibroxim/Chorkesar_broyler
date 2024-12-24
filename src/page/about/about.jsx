@@ -130,7 +130,7 @@ function About(props) {
                                         Производство инкубационных яиц
                                     </li>
                                 </ul>
-                                <Link to={"/product"}>Продукция</Link>
+                                <Link to={"/product"} onClick={()=>{window.scroll(top)}}>Продукция</Link>
                             </div>
                         </div>
                         <div className="col-lg-6 about_s2_item" data-aos="fade-left">

@@ -116,7 +116,7 @@ function Home(props) {
                             <p>Мы тщательно следим за каждым этапом: от выращивания бройлеров до поставки свежего
                                 куриного мяса.</p>
                             <p>Наши стандарты- это гарантия качества и натуральности в каждой упаковке.</p>
-                            <Link to={"#"}>О нас</Link>
+                            <Link to={"/about"} onClick={()=>{window.scroll(top)}}>О нас</Link>
                         </div>
                         <div className="col-lg-6 home_s2_img" data-aos="fade-left">
                             <img src={home_s2} alt=""/>
@@ -347,7 +347,7 @@ function Home(props) {
                                     вашем дне.
                                 </p>
                             </div>
-                            <Link to={"#"}>КОТАКТЫ</Link>
+                            <Link to={"/contact"} onClick={()=>{window.scroll(top)}}>КОТАКТЫ</Link>
                         </div>
                         <div className="home_s8_box_element_bottom"></div>
                     </div>

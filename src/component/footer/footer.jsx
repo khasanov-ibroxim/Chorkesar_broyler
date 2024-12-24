@@ -48,7 +48,7 @@ const Footer = () => {
                                 <h3>НАША ПОЧТА</h3>
                                 <p>На связи с вами</p>
                                 <div className="footer_item_send">
-                                    <a href={"mailto:email@gmail.com"}> Отправить сообщение</a>
+                                    <Link to={"/contact"} onClick={()=>{window.scroll(top)}}> Отправить сообщение</Link>
                                 </div>
                             </div>
                         </div>
