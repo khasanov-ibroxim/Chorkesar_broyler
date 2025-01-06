@@ -45,7 +45,7 @@ function About(props) {
                 <div className="container">
                     <div className="home_s1_title">
                         <span>С любовью к каждой курочке и вашему столу</span>
-                        <h2>CHORKESAR- ЛИДЕР В ПРОИЗВОДСТВЕ КУРИНОГО МЯСА </h2>
+                        <h2>CHORKESAR БРОЙЛЕР - ЛИДЕР В ПРОИЗВОДСТВЕ КУРИНОГО МЯСА </h2>
                         <p>Качество, которое чувствуешь с первого кусочка</p>
                     </div>
                     <div className="row home_s1_box mt-5">
