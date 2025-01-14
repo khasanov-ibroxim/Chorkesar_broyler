@@ -20,33 +20,31 @@ import sertefikat_1 from "../../assets/about/sertefikat_1.jpg"
 import sertefikat_2 from "../../assets/about/sertefikat_2.jpg"
 import sertefikat_3 from "../../assets/about/sertefikat_3.jpg"
 import sertefikat_4 from "../../assets/about/sertefikat_4.jpg"
+import {useTranslation} from "react-i18next";
 
 function About(props) {
-
+    const {t} = useTranslation()
     const [visible, setVisible] = useState(false);
 
     return (
         <div>
-            <div className="contact_header" style={{
-                background:`url(${about_header}) no-repeat center center`,
-                backgroundSize:'cover'
-            }}>
+            <div className="contact_header" style={{background: `url(${about_header}) no-repeat center center`, backgroundSize: 'cover'}}>
 
                 <div className="contact_opacity"></div>
                 <div className="contact_header_left">
-                    <h1>О нас</h1>
+                    <h1>{t("about.about_header.left")}</h1>
                 </div>
                 <div className="contact_header_right">
-                    Главная | О нас
+                    {t("about.about_header.right")}
                 </div>
 
             </div>
             <section className={"home_s1 about_s1"}>
                 <div className="container">
                     <div className="home_s1_title">
-                        <span>С любовью к каждой курочке и вашему столу</span>
-                        <h2>CHORKESAR БРОЙЛЕР - ЛИДЕР В ПРОИЗВОДСТВЕ КУРИНОГО МЯСА </h2>
-                        <p>Качество, которое чувствуешь с первого кусочка</p>
+                        <span>{t("about.about_s1.title_span")}</span>
+                        <h2>{t("about.about_s1.title_h2")}</h2>
+                        <p>{t("about.about_s1.title_p")}</p>
                     </div>
                     <div className="row home_s1_box mt-5">
                         <div className="col-lg-6 home_s1_img">
@@ -54,8 +52,9 @@ function About(props) {
                                 <div className="home_s1_element-blob_line"></div>
                             </div>
                             <div className="home_s1_blob"
-                                 style={{background: `url(${about_s1}) no-repeat`, backgroundPosition: "33% 63%" ,
-                                 backgroundSize:"cover"
+                                 style={{
+                                     background: `url(${about_s1}) no-repeat`, backgroundPosition: "33% 63%",
+                                     backgroundSize: "cover"
                                  }}>
                             </div>
 
@@ -63,24 +62,19 @@ function About(props) {
                         </div>
                         <div className="col-lg-6 home_s1_item_box">
                             <div className="home_s1_item" data-aos="fade-left">
-                                <h3>Мы начали свой путь в 2013 году с целью стать лидерами в производстве мяса и
-                                    яиц.</h3>
-                                <p> С
-                                    тех пор наша компания постоянно развивается, внедряя новейшие технологии и расширяя
-                                    производственные мощности.
-                                </p>
+                                <h3>{t("about.about_s1.item_1.h3")}</h3>
+                                <p>{t("about.about_s1.item_1.p")}</p>
                             </div>
                             <div className="home_s1_item" data-aos="fade-left">
-                                <h3>Основное направление нашей деятельности — производство мяса птицы и инкубационных
-                                    яиц.</h3>
+                                <h3>{t("about.about_s1.item_2")}</h3>
                             </div>
                             <div className="home_s1_item_sertefication" data-aos="fade-left">
-                                <button  onClick={() => setVisible(true)}>Сертификация</button>
+                                <button onClick={() => setVisible(true)}>{t("about.about_s1.item_3")}</button>
                             </div>
                             <div className="home_s1_item_tell" data-aos="fade-left">
                                 <span><LocalPhoneIcon/></span>
                                 <div className="home_s1_item_tell_text">
-                                    <h2>Свяжитесь с нами</h2>
+                                    <h2>{t("about.about_s1.item_4")}</h2>
                                     <h3>+998 99 123 32 32</h3>
                                 </div>
                             </div>
@@ -88,9 +82,6 @@ function About(props) {
                     </div>
                 </div>
             </section>
-
-
-
             <Image.PreviewGroup
                 style={{display: 'none',}}
                 preview={{
@@ -111,26 +102,28 @@ function About(props) {
                     <div className="row">
                         <div className="col-lg-6" data-aos="fade-right">
                             <div className="about_s2_title">
-                                <span>Доверьтесь нам</span>
-                                <h2>НАШИ КЛЮЧЕВЫЕ НАПРАВЛЕНИЯ</h2>
-                                <p>Натуральность и свежесть </p>
+                                <span>{t("about.about_s2.title_span")}</span>
+                                <h2>{t("about.about_s2.title_h2")}</h2>
+                                <p>{t("about.about_s2.title_p")}</p>
                             </div>
                             <div className="about_s2_text">
                                 <ul>
                                     <li>
                                         <CheckCircleIcon/>
-                                        Выращивание бройлерных цыплят
+                                        {t("about.about_s2.item_1")}
                                     </li>
                                     <li>
                                         <CheckCircleIcon/>
-                                        Производство мяса птицы
+                                        {t("about.about_s2.item_2")}
                                     </li>
                                     <li>
                                         <CheckCircleIcon/>
-                                        Производство инкубационных яиц
+                                        {t("about.about_s2.item_3")}
                                     </li>
                                 </ul>
-                                <Link to={"/product"} onClick={()=>{window.scroll(top)}}>Продукция</Link>
+                                <Link to={"/product"} onClick={() => {
+                                    window.scroll(top)
+                                }}>{t("about.about_s2.link")}</Link>
                             </div>
                         </div>
                         <div className="col-lg-6 about_s2_item" data-aos="fade-left">
@@ -153,8 +146,9 @@ function About(props) {
                             </div>
                             <div className="home_s1_element-blob_line"></div>
                             <div className="home_s1_blob"
-                                 style={{background: `url(${about_s3}) no-repeat`, backgroundSize: "100%" ,
-                                 backgroundPosition:"left"
+                                 style={{
+                                     background: `url(${about_s3}) no-repeat`, backgroundSize: "100%",
+                                     backgroundPosition: "left"
                                  }}>
                             </div>
 
@@ -162,34 +156,26 @@ function About(props) {
                         </div>
                         <div className="col-lg-6 home_s1_item_box" data-aos="fade-left">
                             <div className="home_s1_title">
-                                <span>Племенное производство и инкубация</span>
-                                <h2>В нашем комплексе осуществляется импорт племенных цыплят из Венгрии. </h2>
-                                <p>
-                                    Эти цыплята
-                                    выращиваются для получения инкубационных яиц, которые затем используются для
-                                    выведения нового поколения.
-
-                                    Сразу после вылупления цыплята передаются в бройлерные цеха, где они растут и
-                                    развиваются в течение 30–40 дней.
-                                </p>
+                                <span style={{textAlign:"center" , width:"100%"}}>{t("about.about_s3.title_span")}</span>
+                                <h2>{t("about.about_s3.title_h2")}</h2>
+                                <p>{t("about.about_s3.title_p")}</p>
                             </div>
-
                             <div className="home_s1_item">
-                                <h3>На каждом этапе их содержания особое внимание
-                                    уделяется условиям питания и ухода, что обеспечивает здоровье и быстрое развитие
-                                    птиц.</h3>
+                                <h3>{t("about.about_s3.h3")}</h3>
                             </div>
 
-                            <Link to={"/contact"}>Свяжитесь с нами</Link>
+                            <Link to={"/contact"}>{t("about.about_s3.link")}</Link>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className={"about_s4 home_s6"} style={{background:`url(${about_s4}) no-repeat center center`, backgroundSize:'cover'}}>
+            <section className={"about_s4 home_s6"}
+                     style={{background: `url(${about_s4}) no-repeat center center`, backgroundSize: 'cover'}}>
                 <div className="home_s6_opacity"></div>
                 <div className="home_s3_element_top"></div>
             </section>
+
             <section className={"about_s5 home_s3"}>
                 <div className="home_s3_element_top"></div>
                 <div className="container">
@@ -199,8 +185,8 @@ function About(props) {
                                 <img src={about_s5_istorya}/>
                             </div>
                             <div className="home_s3_text">
-                                <h4>ИСТОРИЯ КОМПАНИИ</h4>
-                                <p>С 2013 года производство мяса и яиц</p>
+                                <h4>{t("about.about_s5.item_1.h4")}</h4>
+                                <p>{t("about.about_s5.item_1.p")}</p>
                             </div>
                         </div>
                         <div className="col-lg-3 home_s3_item">
@@ -208,8 +194,8 @@ function About(props) {
                                 <img src={about_s5_napravleniya}/>
                             </div>
                             <div className="home_s3_text">
-                                <h4>НАШИ НАПРАВЛЕНИЯ</h4>
-                                <p>Производство инкубационных яиц, выращивание бройлерных цыплят и производство мяса птицы.</p>
+                                <h4>{t("about.about_s5.item_2.h4")}</h4>
+                                <p>{t("about.about_s5.item_2.p")}</p>
                             </div>
                         </div>
                         <div className="col-lg-3 home_s3_item">
@@ -217,8 +203,8 @@ function About(props) {
                                 <img src={about_s5_sistema} alt=""/>
                             </div>
                             <div className="home_s3_text">
-                                <h4>КЛАСТЕРНАЯ СИСТЕМА</h4>
-                                <p>От импорта племенных цыплят из Венгрии до выпуска готовой продукции.</p>
+                                <h4>{t("about.about_s5.item_3.h4")}</h4>
+                                <p>{t("about.about_s5.item_3.p")}</p>
                             </div>
                         </div>
                         <div className="col-lg-3 home_s3_item">
@@ -226,8 +212,8 @@ function About(props) {
                                 <img src={about_s5_spetsalist} alt=""/>
                             </div>
                             <div className="home_s3_text">
-                                <h4>НАШИ СПЕЦИАЛИСТЫ</h4>
-                                <p>Команда из более чем 170 профессионалов, обеспечивающих высокое качество и надежность работы.</p>
+                                <h4>{t("about.about_s5.item_4.h4")}</h4>
+                                <p>{t("about.about_s5.item_4.p")}</p>
                             </div>
                         </div>
                     </div>

@@ -10,18 +10,20 @@ import garantiya from "../../assets/icon/garantiya.png"
 import kachestva from "../../assets/icon/kachestva.png"
 import virashvnya from "../../assets/icon/virashvnya.png"
 import vkus from "../../assets/icon/vkus.png"
+import {useTranslation} from "react-i18next";
 
 function Product(props) {
+    const {t} = useTranslation()
     return (
         <div>
             <div className="contact_header">
 
                 <div className="contact_opacity"></div>
                 <div className="contact_header_left">
-                    <h1>Продукция</h1>
+                    <h1>{t("products.product_header.left")}</h1>
                 </div>
                 <div className="contact_header_right">
-                    Главная/Продукция
+                    {t("products.product_header.right")}
                 </div>
             </div>
             <section className={"product_s1 about_s2"}>
@@ -29,29 +31,27 @@ function Product(props) {
                     <div className="row">
                         <div className="col-lg-6" data-aos="fade-right">
                             <div className="about_s2_title">
-                                <span>Идеальное мясо от заботливых фермеров</span>
-                                <h2>Наши бройлеры — это высококачественное мясо, выращенное с заботой о каждом этапе
-                                    производства. </h2>
-                                <p>Мы тщательно следим за условиями кормления и содержания птицы, чтобы
-                                    обеспечить наилучший вкус и текстуру мяса.</p>
+                                <span>{t("products.product_s1.title_span")}</span>
+                                <h2>{t("products.product_s1.title_h2")}</h2>
+                                <p>{t("products.product_s1.title_p")}</p>
                             </div>
                             <div className="about_s2_text">
                                 <ul>
-                                    <li>Особенности бройлеров:</li>
+                                    <li>{t("products.product_s1.item_1")}</li>
                                     <li>
                                         <CheckCircleIcon/>
-                                        Качество мяса: нежное и сочное.
+                                        {t("products.product_s1.item_2")}
                                     </li>
                                     <li>
                                         <CheckCircleIcon/>
-                                        Высокая пищевая ценность.
+                                        {t("products.product_s1.item_3")}
                                     </li>
                                     <li>
                                         <CheckCircleIcon/>
-                                        Экологичное кормление, без гормонов роста.
+                                        {t("products.product_s1.item_4")}
                                     </li>
                                 </ul>
-                                <Link to={"/product"}>Продукция</Link>
+                                <Link to={"/product"}>{t("products.product_s1.link")}</Link>
                             </div>
                         </div>
                         <div className="col-lg-6 about_s2_item">
@@ -76,9 +76,8 @@ function Product(props) {
                                 <img src={kachestva}/>
                             </div>
                             <div className="home_s3_text">
-                                <h4>Исключительное Качество</h4>
-                                <p>Каждая птица получает должный уход и питание, что делает мясо особенно нежным и
-                                    сочным. Мы уверены, что наши бройлеры — лучший выбор для вашего стола.</p>
+                                <h4>{t("products.product_s2.item_1.h4")}</h4>
+                                <p>{t("products.product_s2.item_1.p")}</p>
                             </div>
                         </div>
                         <div className="col-lg-3 home_s3_item">
@@ -86,9 +85,8 @@ function Product(props) {
                                 <img src={vkus}/>
                             </div>
                             <div className="home_s3_text">
-                                <h4>Натуральный вкус</h4>
-                                <p>Мы используем только экологически чистые корма, что позволяет добиться идеального
-                                    вкуса и сохранить все полезные свойства мяса.</p>
+                                <h4>{t("products.product_s2.item_2.h4")}</h4>
+                                <p>{t("products.product_s2.item_2.p")}</p>
                             </div>
                         </div>
                         <div className="col-lg-3 home_s3_item">
@@ -96,8 +94,8 @@ function Product(props) {
                                 <img src={virashvnya} alt=""/>
                             </div>
                             <div className="home_s3_text">
-                                <h4>Природное выращивание</h4>
-                                <p>Каждая птица выращивается в условиях, максимально приближенных к природным. </p>
+                                <h4>{t("products.product_s2.item_3.h4")}</h4>
+                                <p>{t("products.product_s2.item_3.p")}</p>
                             </div>
                         </div>
                         <div className="col-lg-3 home_s3_item">
@@ -105,9 +103,8 @@ function Product(props) {
                                 <img src={garantiya} alt=""/>
                             </div>
                             <div className="home_s3_text">
-                                <h4>Гарантия свежести</h4>
-                                <p>Каждая порция мяса, поступающая к вам, свежая, нежная и готова порадовать вас своим
-                                    неповторимым вкусом.</p>
+                                <h4>{t("products.product_s2.item_4.h4")}</h4>
+                                <p>{t("products.product_s2.item_4.p")}</p>
                             </div>
                         </div>
                     </div>
@@ -134,25 +131,23 @@ function Product(props) {
                         </div>
                         <div className="col-lg-6 home_s1_item_box" data-aos="fade-left">
                             <div className="home_s1_title">
-                                <span style={{textAlign:"center" , width:"100%"}}>Яйца, полные природы и пользы</span>
-                                <h2 style={{textAlign:"center"}}>Наши яйца — это продукт высшего качества, полученный от здоровых кур, которые
-                                    питаются натуральным кормом. </h2>
-                                <p style={{textAlign:"center"}}>Они отличаются не только вкусом, но и высоким
-                                    содержанием питательных веществ.</p>
-                                <p>Преимущества наших яиц:</p>
+                                <span style={{textAlign:"center" , width:"100%"}}>{t("products.product_s3.title_span")}</span>
+                                <h2 style={{textAlign:"center"}}>{t("products.product_s3.title_h2")}</h2>
+                                <p style={{textAlign:"center"}}>{t("products.product_s3.title_p")}</p>
+                                <p>{t("products.product_s3.title_p1")}</p>
                             </div>
 
                             <div className="home_s1_item">
-                                <h3>Высокое содержание витаминов и минералов.</h3>
+                                <h3>{t("products.product_s3.item_1")}</h3>
                             </div>
                             <div className="home_s1_item">
-                                <h3>Продукт с минимальной обработкой.</h3>
+                                <h3>{t("products.product_s3.item_2")}</h3>
                             </div>
                             <div className="home_s1_item">
-                                <h3>Яйца с ярким желтком и плотным белком.</h3>
+                                <h3>{t("products.product_s3.item_3")}</h3>
                             </div>
 
-                            <Link to={"/contact"} onClick={()=>{window.scroll(top)}}>Контакты</Link>
+                            <Link to={"/contact"} onClick={()=>{window.scroll(top)}}>{t("products.product_s3.link")}</Link>
                         </div>
                     </div>
                 </div>

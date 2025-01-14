@@ -82,6 +82,10 @@ nav button{
     z-index: 999;
 }
 
+.nav_dropdown p{
+    padding: 0;
+    margin: 0 0 0 10px;
+}
 
 @media screen and (max-width: 1000px) {
     nav{

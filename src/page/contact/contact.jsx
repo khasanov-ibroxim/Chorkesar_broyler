@@ -5,23 +5,23 @@ import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
 import PlaceIcon from '@mui/icons-material/Place';
 import EmailIcon from '@mui/icons-material/Email';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import {useTranslation} from "react-i18next";
 
 function Contact() {
+    const {t} = useTranslation();
     return (
         <div className="contact">
             <div className="contact_header">
 
                 <div className="contact_opacity"></div>
                 <div className="contact_header_left">
-                    <h1>Контакты</h1>
+                    <h1>{t("contact.contact_header.left")}</h1>
                 </div>
-                <div className="contact_header_right" >
-                    Главная | Контакты
-                </div>
+                <div className="contact_header_right">{t("contact.contact_header.right")}</div>
 
             </div>
 
-            <section className="contact_box" >
+            <section className="contact_box">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-7">
@@ -30,7 +30,7 @@ function Contact() {
                                     <PermPhoneMsgIcon/>
                                 </div>
                                 <div className="contact_box_item_text">
-                                    <h4>Телефон</h4>
+                                    <h4>{t("contact.box.phone")}</h4>
                                     <a href="tel:+998951204111">+998 95 120 41 11</a>
                                     <a href="tel:+998972570384">+998 97 257 03 84</a>
                                     <a href="tel:+998996330053">+998 99 633 00 53</a>
@@ -42,10 +42,8 @@ function Contact() {
                                     <PlaceIcon/>
                                 </div>
                                 <div className="contact_box_item_text">
-                                    <h4>Адрес</h4>
-                                    <a href="https://maps.app.goo.gl/bR65G55rTsMx8Hcx9">Республика Узбекистан , Наманганская область
-                                        Попский район,
-                                        Уйгурсой ОСГ, участок №19</a>
+                                    <h4>{t("contact.box.address")}</h4>
+                                    <a href="https://maps.app.goo.gl/bR65G55rTsMx8Hcx9">{t("contact.box.address_location")}</a>
                                 </div>
                             </div>
                             <div className="contact_box_item">
@@ -53,7 +51,7 @@ function Contact() {
                                     <EmailIcon/>
                                 </div>
                                 <div className="contact_box_item_text">
-                                    <h4>Почта</h4>
+                                    <h4>{t("contact.box.mail")}</h4>
                                     <a href="mailto:broyler01@mail.ru">broyler01@mail.ru</a>
                                 </div>
                             </div>
@@ -62,9 +60,9 @@ function Contact() {
                                     <AccessTimeIcon/>
                                 </div>
                                 <div className="contact_box_item_text">
-                                    <h4>Время работы</h4>
-                                    <p>с 8:00 до 20:00</p>
-                                    <p>без выходных</p>
+                                    <h4>{t("contact.box.time.h4")}</h4>
+                                    <p>{t("contact.box.time.p")}</p>
+                                    <p>{t("contact.box.time.p_2")}</p>
                                 </div>
 
                             </div>
@@ -72,15 +70,14 @@ function Contact() {
                         <div className="col-lg-5">
                             <div className="contact_right">
                                 <div className="contact_right_title">
-                                    <span>Контакты</span>
-                                    <h2>Мы всегда рады вас слышать и отвечать на ваши вопросы! Свяжитесь с нами любым
-                                        удобным для вас способом:</h2>
+                                    <span>{t("contact.box_right.span")}</span>
+                                    <h2>{t("contact.box_right.h2")}</h2>
                                 </div>
                                 <form action="#">
-                                    <input type="text" placeholder={"Имя"}/>
-                                    <input type="text" placeholder={"Телефон номер"}/>
-                                    <textarea rows="5" placeholder="Сообщение"/>
-                                    <button>Отправить</button>
+                                    <input type="text" placeholder={t("contact.box_right.input_name")}/>
+                                    <input type="text" placeholder={t("contact.box_right.input_phone")}/>
+                                    <textarea rows="5" placeholder={t("contact.box_right.input_msg")}/>
+                                    <button>{t("contact.box_right.send")}</button>
                                 </form>
                             </div>
                         </div>
