@@ -11,11 +11,13 @@ import kachestva from "../../assets/icon/kachestva.png"
 import virashvnya from "../../assets/icon/virashvnya.png"
 import vkus from "../../assets/icon/vkus.png"
 import {useTranslation} from "react-i18next";
+import ProductMetaTags from "../../component/helment/ProductMetaTags.jsx";
 
 function Product(props) {
     const {t} = useTranslation()
     return (
         <div>
+            <ProductMetaTags/>
             <div className="contact_header">
 
                 <div className="contact_opacity"></div>

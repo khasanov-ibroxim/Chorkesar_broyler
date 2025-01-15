@@ -6,11 +6,13 @@ import PlaceIcon from '@mui/icons-material/Place';
 import EmailIcon from '@mui/icons-material/Email';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import {useTranslation} from "react-i18next";
+import ContactMetaTags from "../../component/helment/ContactMetaTags.jsx";
 
 function Contact() {
     const {t} = useTranslation();
     return (
         <div className="contact">
+            <ContactMetaTags/>
             <div className="contact_header">
 
                 <div className="contact_opacity"></div>

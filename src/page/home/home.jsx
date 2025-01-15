@@ -29,12 +29,14 @@ import gallery_4 from "../../assets/home/galarey/gallery_4.jpg"
 import gallery_5 from "../../assets/home/galarey/gallery_5.jpg"
 import gallery_6 from "../../assets/home/galarey/gallery_6.jpg"
 import {useTranslation} from "react-i18next";
+import HomeMetaTags from "../../component/helment/HomeMetaTags.jsx";
 
 
 function Home(props) {
     const {t} = useTranslation();
     return (
         <div className={"home_page"}>
+            <HomeMetaTags/>
             <header className="home-header">
 
                 <span className="opacity_header"></span>

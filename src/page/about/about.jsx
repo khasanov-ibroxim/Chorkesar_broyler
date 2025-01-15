@@ -21,6 +21,7 @@ import sertefikat_2 from "../../assets/about/sertefikat_2.jpg"
 import sertefikat_3 from "../../assets/about/sertefikat_3.jpg"
 import sertefikat_4 from "../../assets/about/sertefikat_4.jpg"
 import {useTranslation} from "react-i18next";
+import AboutMetaTags from "../../component/helment/AboutMetaTags.jsx";
 
 function About(props) {
     const {t} = useTranslation()
@@ -28,6 +29,7 @@ function About(props) {
 
     return (
         <div>
+            <AboutMetaTags/>
             <div className="contact_header" style={{background: `url(${about_header}) no-repeat center center`, backgroundSize: 'cover'}}>
 
                 <div className="contact_opacity"></div>
