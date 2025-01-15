@@ -63,17 +63,17 @@ function About(props) {
                             <div className="home_s1_element_iz"></div>
                         </div>
                         <div className="col-lg-6 home_s1_item_box">
-                            <div className="home_s1_item" data-aos="fade-left">
+                            <div className="home_s1_item" data-aos="fade-right">
                                 <h3>{t("about.about_s1.item_1.h3")}</h3>
                                 <p>{t("about.about_s1.item_1.p")}</p>
                             </div>
-                            <div className="home_s1_item" data-aos="fade-left">
+                            <div className="home_s1_item" data-aos="fade-right">
                                 <h3>{t("about.about_s1.item_2")}</h3>
                             </div>
-                            <div className="home_s1_item_sertefication" data-aos="fade-left">
+                            <div className="home_s1_item_sertefication" data-aos="fade-right">
                                 <button onClick={() => setVisible(true)}>{t("about.about_s1.item_3")}</button>
                             </div>
-                            <div className="home_s1_item_tell" data-aos="fade-left">
+                            <div className="home_s1_item_tell" data-aos="fade-right">
                                 <span><LocalPhoneIcon/></span>
                                 <div className="home_s1_item_tell_text">
                                     <h2>{t("about.about_s1.item_4")}</h2>
@@ -128,7 +128,7 @@ function About(props) {
                                 }}>{t("about.about_s2.link")}</Link>
                             </div>
                         </div>
-                        <div className="col-lg-6 about_s2_item" data-aos="fade-left">
+                        <div className="col-lg-6 about_s2_item" data-aos="fade-right">
                             <div className="about_s2_element_index wow animate__animated  animate__rubberBand">
 
                             </div>
@@ -156,7 +156,7 @@ function About(props) {
 
                             <div className="home_s1_element_iz"></div>
                         </div>
-                        <div className="col-lg-6 home_s1_item_box" data-aos="fade-left">
+                        <div className="col-lg-6 home_s1_item_box" data-aos="fade-right">
                             <div className="home_s1_title">
                                 <span style={{textAlign:"center" , width:"100%"}}>{t("about.about_s3.title_span")}</span>
                                 <h2>{t("about.about_s3.title_h2")}</h2>

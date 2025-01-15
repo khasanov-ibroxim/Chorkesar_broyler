@@ -88,14 +88,14 @@ function Home(props) {
                             <div className="home_s1_element_iz"></div>
                         </div>
                         <div className="col-lg-6 home_s1_item_box">
-                            <div className="home_s1_item" data-aos="fade-left">
+                            <div className="home_s1_item" data-aos="fade-right">
                                 <h3>{t("home.home_s1.item_1.h3")}</h3>
                                 <p>{t("home.home_s1.item_1.p")}</p>
                             </div>
-                            <div className="home_s1_item" data-aos="fade-left">
+                            <div className="home_s1_item" data-aos="fade-right">
                                 <h3>{t("home.home_s1.item_2")}</h3>
                             </div>
-                            <div className="home_s1_item_tell" data-aos="fade-left">
+                            <div className="home_s1_item_tell" data-aos="fade-right">
                                 <span><LocalPhoneIcon/></span>
                                 <div className="home_s1_item_tell_text">
                                     <h2>{t("home.home_s1.item_3")}</h2>
@@ -120,7 +120,7 @@ function Home(props) {
                                 window.scroll(top)
                             }}>{t("home.home_s2.link")}</Link>
                         </div>
-                        <div className="col-lg-6 home_s2_img" data-aos="fade-left">
+                        <div className="col-lg-6 home_s2_img" data-aos="fade-right">
                             <img src={home_s2} alt=""/>
                             <div className="home_s2_element_top">
                                 <h1>{t("home.home_s2.element")}</h1>
@@ -318,7 +318,7 @@ function Home(props) {
                                 <Link to={"/product"} onClick={() => window.scrollTo(0, 0)}>{t("home.home_s7.link")}<DoubleArrowIcon/></Link>
                             </div>
                         </div>
-                        <div data-aos="fade-left" className="col-lg-4 home_s7_item">
+                        <div data-aos="fade-right" className="col-lg-4 home_s7_item">
                             <div className="home_s7_item_img">
                                 <img src={home_header_1} alt=""/>
                             </div>

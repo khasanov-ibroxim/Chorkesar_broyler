@@ -74,6 +74,7 @@ nav button{
     color: #1E4616;
     font-size: 25px;
     cursor: pointer;
+    margin-right: 15px;
 }
 .menu{
     display: flex;

@@ -131,7 +131,7 @@ function Product(props) {
 
                             <div className="home_s1_element_iz"></div>
                         </div>
-                        <div className="col-lg-6 home_s1_item_box" data-aos="fade-left">
+                        <div className="col-lg-6 home_s1_item_box" data-aos="fade-right">
                             <div className="home_s1_title">
                                 <span style={{textAlign:"center" , width:"100%"}}>{t("products.product_s3.title_span")}</span>
                                 <h2 style={{textAlign:"center"}}>{t("products.product_s3.title_h2")}</h2>
