@@ -112,7 +112,7 @@ nav button{
     }
     .menu.open {
         top: 100%;
-        height: 34vh; /* Menu butun balandlikni egallaydi */
+        height: 100vh; /* Menu butun balandlikni egallaydi */
     }
     .menu ul {
         display: flex;
@@ -156,7 +156,7 @@ nav button{
   
     .menu.open {
 
-        height: 38vh;
+        height: 100vh;
     }
 }
 
