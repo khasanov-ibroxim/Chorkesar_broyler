@@ -12,7 +12,6 @@ import shape from "../../assets/img/shape.svg"
 import home_s1 from "../../assets/home/home_s1.jpg"
 import home_s2 from "../../assets/home/home_s2.jpg"
 import {Image} from "antd";
-import UnarchiveIcon from '@mui/icons-material/Unarchive';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import {Link} from "react-router-dom";
 import {EyeOutlined} from "@ant-design/icons";
