@@ -51,9 +51,8 @@ function Home(props) {
                         delay: 5000,
                         disableOnInteraction: false,
                     }}
-                    effect={"fade"}
+                    // effect={"fade"}
                     loop={true}
-                    zoom={true} // Enable Zoom
                     className="mySwiper"
                 >
                     <SwiperSlide>
