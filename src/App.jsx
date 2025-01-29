@@ -8,6 +8,7 @@ import Navbar from "./component/navbar/navbar.jsx";
 import Footer from "./component/footer/footer.jsx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Gallery from "./page/gallery/gallery.jsx";
 function App() {
 
     useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/about" element={<><Navbar/><About/><Footer/></>} />
                 <Route path="/contact" element={<><Navbar/><Contact/><Footer/></>} />
                 <Route path="/product" element={<><Navbar/><Product/><Footer/></>} />
+                <Route path="/gallery" element={<><Navbar/><Gallery/><Footer/></>} />
             </Routes>
         </BrowserRouter>
     );

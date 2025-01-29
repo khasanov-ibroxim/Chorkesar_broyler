@@ -59,6 +59,7 @@ nav ul li a {
     font-size: 12px;
     font-family: var(--inter);
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 nav button{
@@ -79,7 +80,7 @@ nav button{
 .menu{
     display: flex;
     justify-content: flex-end;
-    width: 65%;
+    width: 100%;
     z-index: 999;
 }
 

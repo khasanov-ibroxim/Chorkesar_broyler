@@ -52,6 +52,8 @@ export default function Navbar({onlyIcon = true}) {
                                     href="/product">{t("navbar.products")}</a></li>
                                 <li className={location.pathname === "/contact" ? "active_location" : ""}><a
                                     href="/contact">{t("navbar.contact")}</a></li>
+                                <li className={location.pathname === "/gallery" ? "active_location" : ""}><a
+                                    href="/gallery">{t("navbar.gallery")}</a></li>
                                 <li className={"nav_dropdown"}>
                                     <Dropdown
                                         menu={{

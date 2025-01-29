@@ -6,6 +6,7 @@ import homeTranslations from "./translations/homeTranslate.jsx";
 import aboutTranslations from "./translations/aboutTranslate.jsx";
 import productsTranslations from "./translations/productsTranslate.jsx";
 import contactTranslate from "./translations/contactTranslate.jsx";
+import galleryTranslate from "./translations/galleryTranslate.jsx";
 
 const resources = {
     ru: {
@@ -14,12 +15,14 @@ const resources = {
             about: aboutTranslations.ru,
             products: productsTranslations.ru,
             contact: contactTranslate.ru,
+            gallery: galleryTranslate.ru,
 
             navbar: {
                 home: "Главная",
                 about: "О нас",
                 products: "Продукция",
                 contact: "Контакты",
+                gallery: "Галерея",
             },
 
             footer: {
@@ -47,12 +50,14 @@ const resources = {
             about: aboutTranslations.en,
             products: productsTranslations.en,
             contact: contactTranslate.en,
+            gallery: galleryTranslate.en,
 
             navbar: {
                 home: "Home",
                 about: "About",
                 products: "Products",
                 contact: "Contacts",
+                gallery: "Gallery",
             },
             footer: {
                 item_1:"Still have questions or need additional information? We are always open for communication.",
