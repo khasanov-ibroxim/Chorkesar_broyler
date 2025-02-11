@@ -236,6 +236,9 @@ function About(props) {
 
             <section className={'home_s5 about_s6'}>
                 <div className="container">
+                    <div className="home_s5_title">
+                        <h1>{t("home.home_s5.title_h1")}</h1>
+                    </div>
                     <div className="gallery-container">
                         <div className="gallery-item">
                             <Image src={gallery_1} alt=""
