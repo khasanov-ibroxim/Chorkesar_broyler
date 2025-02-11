@@ -22,6 +22,15 @@ import sertefikat_3 from "../../assets/about/sertefikat_3.jpg"
 import sertefikat_4 from "../../assets/about/sertefikat_4.jpg"
 import {useTranslation} from "react-i18next";
 import AboutMetaTags from "../../component/helment/AboutMetaTags.jsx";
+import {EyeOutlined} from "@ant-design/icons";
+
+import gallery_1 from "../../assets/about/diplom/1.jpg";
+import gallery_2 from "../../assets/about/diplom/2.jpg";
+import gallery_3 from "../../assets/about/diplom/3.jpg";
+import gallery_4 from "../../assets/about/diplom/4.jpg";
+import gallery_5 from "../../assets/about/diplom/5.jpg";
+import gallery_6 from "../../assets/about/diplom/6.jpg";
+import gallery_7 from "../../assets/about/diplom/7.jpg";
 
 function About(props) {
     const {t} = useTranslation()
@@ -30,7 +39,8 @@ function About(props) {
     return (
         <div>
             <AboutMetaTags/>
-            <div className="contact_header" style={{background: `url(${about_header}) no-repeat center center`, backgroundSize: 'cover'}}>
+            <div className="contact_header"
+                 style={{background: `url(${about_header}) no-repeat center center`, backgroundSize: 'cover'}}>
 
                 <div className="contact_opacity"></div>
                 <div className="contact_header_left">
@@ -158,7 +168,8 @@ function About(props) {
                         </div>
                         <div className="col-lg-6 home_s1_item_box" data-aos="fade-right">
                             <div className="home_s1_title">
-                                <span style={{textAlign:"center" , width:"100%"}}>{t("about.about_s3.title_span")}</span>
+                                <span
+                                    style={{textAlign: "center", width: "100%"}}>{t("about.about_s3.title_span")}</span>
                                 <h2>{t("about.about_s3.title_h2")}</h2>
                                 <p>{t("about.about_s3.title_p")}</p>
                             </div>
@@ -217,6 +228,81 @@ function About(props) {
                                 <h4>{t("about.about_s5.item_4.h4")}</h4>
                                 <p>{t("about.about_s5.item_4.p")}</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="home_s3_element_bottom"></div>
+            </section>
+
+            <section className={'home_s5 about_s6'}>
+                <div className="container">
+                    <div className="home_s5_title">
+                        <span>{t("home.home_s5.title_span")}</span>
+                        <h1>{t("home.home_s5.title_h1")}</h1>
+                    </div>
+                    <div className="gallery-container">
+                        <div className="gallery-item">
+                            <Image src={gallery_1} alt=""
+                                   preview={{
+                                       mask: <div className={"preview_box"}><EyeOutlined/>
+                                           <span>{t("home.home_s5.view")}</span>
+                                       </div>
+                                   }}
+                            />
+                        </div>
+                        <div className="gallery-item">
+                            <Image src={gallery_2} alt=""
+                                   preview={{
+                                       mask: <div className={"preview_box"}><EyeOutlined/>
+                                           <span>{t("home.home_s5.view")}</span>
+                                       </div>
+                                   }}
+                            />
+                        </div>
+                        <div className="gallery-item">
+                            <Image src={gallery_3} alt=""
+                                   preview={{
+                                       mask: <div className={"preview_box"}><EyeOutlined/>
+                                           <span>{t("home.home_s5.view")}</span>
+                                       </div>
+                                   }}
+                            />
+                        </div>
+                        <div className="gallery-item">
+                            <Image src={gallery_4} alt=""
+                                   preview={{
+                                       mask: <div className={"preview_box"}><EyeOutlined/>
+                                           <span>{t("home.home_s5.view")}</span>
+                                       </div>
+                                   }}
+                            />
+                        </div>
+                        <div className="gallery-item">
+                            <Image src={gallery_5} alt=""
+                                   preview={{
+                                       mask: <div className={"preview_box"}><EyeOutlined/>
+                                           <span>{t("home.home_s5.view")}</span>
+                                       </div>
+                                   }}
+                            />
+                        </div>
+                        <div className="gallery-item">
+                            <Image src={gallery_6} alt=""
+                                   preview={{
+                                       mask: <div className={"preview_box"}><EyeOutlined/>
+                                           <span>{t("home.home_s5.view")}</span>
+                                       </div>
+                                   }}
+                            />
+                        </div>
+                        <div className="gallery-item">
+                            <Image src={gallery_7} alt=""
+                                   preview={{
+                                       mask: <div className={"preview_box"}><EyeOutlined/>
+                                           <span>{t("home.home_s5.view")}</span>
+                                       </div>
+                                   }}
+                            />
                         </div>
                     </div>
                 </div>

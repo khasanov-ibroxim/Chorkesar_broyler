@@ -162,6 +162,11 @@
 .about_s5 .home_s3_text{
     height: 80%;
 }
+
+.about_s6 .gallery-item{
+    width: 214px;
+}
+
 @media screen and (max-width: 1000px){
     .about_s2_item{
         padding-top: 30px;
